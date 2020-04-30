@@ -22,6 +22,7 @@ namespace NAudioBPM
 
             if (bpmDetector.Groups.Length > 0)
             {
+                Console.WriteLine(String.Format("Most probable BPM is {0} ({1} samples)", bpmDetector.Groups[i].Tempo, bpmDetector.Groups[i].Count));
                 if (bpmDetector.Groups.Length > 1)
                 {
                     Console.WriteLine("Other options are:");
