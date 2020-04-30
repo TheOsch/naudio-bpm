@@ -27,7 +27,7 @@ namespace NAudioBPM
                     Console.WriteLine("Other options are:");
                     for (int i = 1; i < bpmDetector.Groups.Length; ++i)
                     {
-                        Console.WriteLine(String.Format("{0} BPM ({1} samples)", bpmDetector.Groups[0].Tempo, bpmDetector.Groups[0].Count));
+                        Console.WriteLine(String.Format("{0} BPM ({1} samples)", bpmDetector.Groups[i].Tempo, bpmDetector.Groups[i].Count));
                     }
                 }
             }
